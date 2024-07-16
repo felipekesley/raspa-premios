@@ -9,7 +9,7 @@ const menuItems = [
 
 export const NavBar = () => {
   return (
-    <nav className="fixed bg-appPrimary-300 p-2 rounded-full w-full max-w-[400px] left-1/2 translate-x-[-50%] bottom-6">
+    <nav className="fixed bg-appPrimary-300 p-2 rounded-full w-full max-w-[344px] lg:max-w-[400px] left-1/2 translate-x-[-50%] bottom-6">
       <ul className="flex items-center justify-between gap-4">
         {menuItems.map((item) => (
           <li key={item.title}>

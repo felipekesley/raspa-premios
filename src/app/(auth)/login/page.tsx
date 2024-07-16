@@ -15,9 +15,9 @@ const LoginPage = () => {
       <Container className="min-h-screen flex justify-center items-center">
         <div className="flex flex-col gap-6 items-center w-full">
           <Image
-            src="/logo-icon.png"
-            width={312}
-            height={312}
+            src="/logo-icon-2.png"
+            width={180}
+            height={180}
             alt="logo"
             className="mx-auto"
           />
