@@ -1,0 +1,21 @@
+{
+	"name": "Raspa premios",
+	"short_name": "RaspaPremios",
+	"icons": [
+		{
+			"src": "/logo-icon-2.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "/logo-icon-2.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	],
+	"background_color": "#4400ce",
+	"description": "Raspa premios",
+	"display": "standalone",
+	"start_url": "/",
+	"theme_color": "#4400ce"
+}
