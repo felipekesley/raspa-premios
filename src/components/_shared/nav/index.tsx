@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const menuItems = [
   { href: "/", title: "Home", Icon: House },
-  { href: "/flame", title: "Flame", Icon: Flame },
-  { href: "/crown", title: "Crown", Icon: Crown },
+  { href: "/", title: "Flame", Icon: Flame },
+  { href: "/", title: "Crown", Icon: Crown },
 ];
 
 export const NavBar = () => {
