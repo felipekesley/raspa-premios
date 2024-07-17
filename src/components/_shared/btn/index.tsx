@@ -35,7 +35,7 @@ export const Btn = (props: Props) => {
   }
 
   return (
-    <button {...(rest as ButtonProps)} className={cn(`${style}`, className)}>
+    <button {...(rest as ButtonProps)} className={cn(style, className)}>
       <span
         className={cn(
           "bg-appThird px-4 py-2 rounded-full w-full flex items-center justify-center shadow-sm",
