@@ -2,6 +2,7 @@ import { Main } from "@/components/_shared/main";
 import "./globals.css";
 
 import { cn } from "@/lib/utils";
+import { JotaiProvider } from "@/providers";
 import type { Metadata } from "next";
 import { Roboto as FontSans } from "next/font/google";
 
@@ -30,7 +31,9 @@ export default function RootLayout({
       <body
         className={cn("min-h-screen font-sans antialiased", fontSans.variable)}
       >
-        <Main>{children}</Main>
+        <JotaiProvider>
+          <Main>{children}</Main>
+        </JotaiProvider>
       </body>
     </html>
   );
