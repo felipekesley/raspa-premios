@@ -1,19 +1,19 @@
+import { SortedNumbers } from "@/components/_data/sortedNumbers";
 import { AppBg } from "@/components/_shared/appBg";
 import { Container } from "@/components/_shared/container";
 import { NavBar } from "@/components/_shared/nav";
-import { GameCard } from "@/components/cardGame";
+import { Title } from "@/components/_shared/title";
 import { UserBar } from "@/components/userBar";
-import { Play, ReceiptText } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: "Numeros",
 };
 
-export default function HomePage() {
+export default function NumbersPage() {
   return (
     <AppBg className="bg-appPrimary pb-32">
-      <Container className="min-h-screen py-8 lg:flex flex-col justify-between">
+      <Container className="min-h-screen py-8 lg:flex flex-col gap-9">
         <UserBar.Root className="flex justify-between bg-appPrimary-300 p-4 rounded-2xl shadow-lg">
           <UserBar.Wrapper>
             <UserBar.UserName userName="Bruno" />
@@ -23,17 +23,11 @@ export default function HomePage() {
         </UserBar.Root>
 
         <div className="flex flex-col gap-6">
-          <GameCard.Root className="lg:mt-0 mt-8">
-            <GameCard.Tag text="mais jogado" />
-            <GameCard.Image src="/gameImage.webp" />
-            <GameCard.Title text="Tesouro do jacaré" />
-            <GameCard.Description text="encontre os objetos do jacaré e receba premios na hora!" />
-            <GameCard.Premiation text="80% em premios" />
-            <GameCard.Actions>
-              <GameCard.Action icon={Play} />
-              <GameCard.Action icon={ReceiptText} />
-            </GameCard.Actions>
-          </GameCard.Root>
+          <Title tag="h2" fontWeight="bold" className="text-white text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </Title>
+
+          <SortedNumbers />
         </div>
 
         <div>
